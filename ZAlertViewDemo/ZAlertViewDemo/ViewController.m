@@ -17,6 +17,10 @@
 
 @implementation ViewController
 - (IBAction)showAlert:(UIButton *)sender {
+    self.alertView.nameLabel.text = @"Apple";
+    self.alertView.companyLabel.text = @"Apple Inc.";
+    self.alertView.leftCountLabel.text = @"20";
+    self.alertView.leftDescriptionLabel.text = @"年收入";
     [self.alertView show];
 }
 
@@ -35,6 +39,16 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+// 因为是加到window上的，所以要移除这个视图防止内存泄露
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    
+    if (_alertView) {
+        [self.alertView removeFromSuperview];
+    }
+    
 }
 
 @end

@@ -118,7 +118,16 @@
                     <exclude reference="Wp4-YA-xh6"/>
                 </mask>
             </variation>
-            <point key="canvasLocation" x="271" y="359"/>
+            <connections>
+                <outlet property="companyLabel" destination="YBm-0o-yH9" id="LhY-YZ-dEP"/>
+                <outlet property="headerIcon" destination="qKi-9o-e99" id="Az9-aS-x8j"/>
+                <outlet property="leftCountLabel" destination="r2M-UK-qfK" id="Yiq-X6-5i1"/>
+                <outlet property="leftDescriptionLabel" destination="Bpc-A9-RiI" id="0Wj-SW-CM1"/>
+                <outlet property="nameLabel" destination="rki-ZR-Gaq" id="9DR-0R-PFl"/>
+                <outlet property="rightCountLabel" destination="BRg-Zx-uce" id="hfU-5S-6aj"/>
+                <outlet property="rightDescriptionLabel" destination="TD5-jP-Amf" id="bdg-ng-gdH"/>
+            </connections>
+            <point key="canvasLocation" x="218" y="323"/>
         </view>
     </objects>
     <resources>
