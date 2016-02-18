@@ -5,4 +5,4 @@
 
 效果图
 
-![效果图](http://7xr0k3.com1.z0.glb.clouddn.com/ZAlert%2FtestZAlert.gif)
+![效果图](https://github.com/zcill/ZAlert/blob/master/Screenshots/testZAlert.gif)
