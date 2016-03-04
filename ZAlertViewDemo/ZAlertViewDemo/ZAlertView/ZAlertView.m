@@ -43,8 +43,6 @@
         _bgView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.3];
         _bgView.hidden = YES;
         
-        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hide)];
-        [_bgView addGestureRecognizer:tap];
     }
     return _bgView;
 }
@@ -61,6 +59,8 @@
         self.center = center;
         
     } completion:^(BOOL finished) {
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hide)];
+        [_bgView addGestureRecognizer:tap];
         self.bgView.userInteractionEnabled = YES;
     }];
     
